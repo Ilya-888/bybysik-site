@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #3d2933;
+  background: linear-gradient(180deg, #fff7fa 0%, #fff 45%, #fff5f8 100%);
+}
+.hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top, #ffe0ea 0, #fff7fa 45%, #fff 100%);
+}
+.small { letter-spacing: 2px; text-transform: uppercase; font-size: 12px; opacity: .65; }
+h1 { font-size: clamp(42px, 9vw, 84px); margin: 18px 0 12px; line-height: 1; }
+.subtitle { max-width: 650px; font-size: 18px; line-height: 1.6; opacity: .78; }
+.button, .surprise {
+  margin-top: 24px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: none;
+  background: #e85d86;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(232,93,134,.25);
+}
+.section { max-width: 1150px; margin: auto; padding: 90px 20px; }
+h2 { text-align: center; font-size: clamp(30px, 5vw, 48px); margin: 0 0 12px; }
+.section-text { text-align: center; opacity: .65; margin-bottom: 45px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+.card {
+  overflow: hidden; border-radius: 22px; background: white;
+  box-shadow: 0 12px 35px rgba(70,30,45,.10);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.card:hover { transform: translateY(-7px) rotate(.3deg); box-shadow: 0 18px 45px rgba(70,30,45,.16); }
+.card img { width: 100%; height: 360px; object-fit: cover; display: block; }
+.caption { padding: 18px 18px 20px; }
+.caption h3 { margin: 0 0 8px; font-size: 20px; }
+.caption p { margin: 0; line-height: 1.5; opacity: .7; }
+.letter { max-width: 850px; }
+.letter-box { background: white; border-radius: 28px; padding: 45px 30px; box-shadow: 0 15px 50px rgba(70,30,45,.10); text-align: center; }
+.envelope { font-size: 55px; margin-bottom: 10px; }
+.letter-box p { max-width: 650px; margin: 15px auto; line-height: 1.7; font-size: 18px; }
+.signature { font-weight: bold; font-size: 24px !important; }
+.final { text-align: center; min-height: 65vh; }
+.surprise-text { min-height: 70px; margin: 35px auto 0; max-width: 650px; font-size: 25px; line-height: 1.5; font-weight: bold; }
+footer { text-align: center; padding: 30px; opacity: .6; }
+.heart { position: fixed; bottom: -30px; font-size: 20px; animation: floatUp 5s linear forwards; pointer-events: none; z-index: 10; }
+@keyframes floatUp { to { transform: translateY(-110vh) rotate(30deg); opacity: 0; } }
+@media (max-width: 600px) { .section { padding: 60px 14px; } .card img { height: 420px; } }

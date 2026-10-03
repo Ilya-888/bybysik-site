@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для тебя ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <header class="hero">
+    <p class="small">маленький сайт, сделанный специально для тебя</p>
+    <h1>Для самой особенной ❤️</h1>
+    <p class="subtitle">Здесь собраны несколько наших моментов, улыбок и просто причин сказать тебе: ты мне очень дорога.</p>
+    <a class="button" href="#photos">Смотреть нашу историю ↓</a>
+  </header>
+
+  <main>
+    <section id="photos" class="section">
+      <h2>Наши моменты 📸</h2>
+      <p class="section-text">Некоторые фотографии просто нельзя оставить в телефоне. Их хочется сохранить здесь.</p>
+
+      <div class="gallery">
+        <article class="card"><img src="photos/photo1.jpeg" alt="Наш момент"><div class="caption"><h3>Резко захотелось чипсов с грибами, и мы поехали за ними 😂</h3><p></p></div></article>
+        <article class="card"><img src="photos/photo2.jpeg" alt="Мы у моря"><div class="caption"><h3>Наше первое путешествие ❤️</h3><p>Это наше первое путешествие, которое мы будем вспоминать на протяжении всей жизни.</p></div></article>
+        <article class="card"><img src="photos/photo3.jpeg" alt="Наша смешная фотография"><div class="caption"><h3>Рандом в Ласточке 😂</h3><p></p></div></article>
+        <article class="card"><img src="photos/photo4.jpeg" alt="Момент за столом"><div class="caption"><h3>Голодный ребенек ест мак 😂</h3><p></p></div></article>
+        <article class="card"><img src="photos/photo5.jpeg" alt="Смешной совместный момент"><div class="caption"><h3>Вот за это я нас и люблю 😭❤️</h3><p>Потому что с тобой даже обычный вечер превращается в воспоминание.</p></div></article>
+        <article class="card"><img src="photos/photo6.jpeg" alt="Совместное фото ночью"><div class="caption"><h3>Когда просто хочется быть рядом 🌙</h3><p>Без особой причины. Просто рядом, и всё.</p></div></article>
+        <article class="card"><img src="photos/photo7.jpeg" alt="Совместное фото"><div class="caption"><h3>Ты + я = 🤍</h3><p>Формула, которую я менять не собираюсь.</p></div></article>
+        <article class="card"><img src="photos/photo8.jpeg" alt="Совместное фото в зеркале"><div class="caption"><h3>Ещё один момент 🫶</h3><p>Пусть таких фотографий становится только больше.</p></div></article>
+        <article class="card"><img src="photos/photo9.jpeg" alt="Совместная фотография"><div class="caption"><h3>Ещё один наш момент ❤️</h3><p>И пусть таких воспоминаний у нас будет ещё очень много.</p></div></article>
+        <article class="card"><img src="photos/photo10.jpeg" alt="Совместная фотография"><div class="caption"><h3>И это ещё не конец ❤️</h3><p>Потому что впереди у нас ещё куча моментов.</p></div></article>
+      </div>
+    </section>
+
+    <section class="letter section">
+      <div class="letter-box">
+        <div class="envelope">💌</div>
+        <h2>Немного от меня</h2>
+        <p>Спасибо тебе за все наши моменты, за смех, за глупости, за поддержку и просто за то, что ты есть в моей жизни.</p>
+        <p>Я хочу, чтобы ты чаще улыбалась, меньше переживала по пустякам и всегда помнила, что для меня ты особенная.</p>
+        <p class="signature">Твой ❤️</p>
+      </div>
+    </section>
+
+    <section class="final section">
+      <h2>У меня для тебя кое-что есть...</h2>
+      <button class="surprise" onclick="showSurprise()">Нажми сюда ❤️</button>
+      <p id="surpriseText" class="surprise-text"></p>
+    </section>
+  </main>
+
+  <footer>Сделано с любовью ❤️</footer>
+  <script src="script.js"></script>
+</body>
+</html>
